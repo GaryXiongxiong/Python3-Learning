@@ -1,3 +1,9 @@
 {
-    "python.pythonPath": "C:\\Users\\qq279\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+    "python.pythonPath": "C:\\Users\\qq279\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
 }
