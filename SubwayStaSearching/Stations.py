@@ -33,9 +33,35 @@ taiBNL = Station("太白南路",3)
 daCS = Station("大差市",4)
 hePM = Station("和平门",4)
 jianZKJDX = Station("建筑科技大学",4)
-liJC = Station("李家村",4)
 xiAKJDX = Station("西安科技大学",4)
-
+stationStringMap={
+    yuXM.getName():yuXM,
+    saJQ.getName():saJQ,
+    yuXM.getName():yuXM,
+    saJQ.getName():saJQ,
+    beiDJ.getName():beiDJ,
+    wuLK.getName():wuLK,
+    chaoYM.getName():chaoYM,
+    kangFL.getName():kangFL,
+    tongHM.getName():tongHM,
+    zhongL.getName():zhongL,
+    yongNM.getName():yongNM,
+    nanSM.getName():nanSM,
+    tiYC.getName():tiYC,
+    xiaoZ.getName():xiaoZ,
+    changLGY.getName():changLGY,
+    xianNL.getName():xianNL,
+    yanXM.getName():yanXM,
+    qingLS.getName():qingLS,
+    beiCT.getName():beiCT,
+    daYT.getName():daYT,
+    jiXC.getName():jiXC,
+    taiBNL.getName():taiBNL,
+    daCS.getName():daCS,
+    hePM.getName():hePM,
+    jianZKJDX.getName():jianZKJDX,
+    xiAKJDX.getName():xiAKJDX
+}
 stationMap = {}#建立站点图，其中每个站点对应散列表中的一个数组，数组中包含与站点联通的所有站点
 stationMap[yuXM] = [saJQ]
 stationMap[saJQ] = [yuXM,beiDJ]
@@ -57,8 +83,7 @@ stationMap[beiCT] = [qingLS,daYT]
 stationMap[daYT] = [beiCT,xiAKJDX,xiaoZ]
 stationMap[jiXC] = [xiaoZ,taiBNL]
 stationMap[taiBNL] = [jiXC]
-stationMap[daCS] = [chaoYM,hePM]
+stationMap[daCS] = [wuLK,hePM]
 stationMap[hePM] = [daCS,jianZKJDX]
-stationMap[jianZKJDX] = [hePM,liJC]
-stationMap[liJC] = [jianZKJDX,xiAKJDX]
-stationMap[xiAKJDX] = [liJC,daYT]
+stationMap[jianZKJDX] = [hePM,xiAKJDX]
+stationMap[xiAKJDX] = [jianZKJDX,daYT]
