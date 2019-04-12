@@ -1,4 +1,5 @@
 #UseMapBFSFindSubway
+import os
 from Stations import *#导入编写的地铁站信息
 from collections import deque#导入队列类
 def search(station,dst):#参数为起点与终点
@@ -29,4 +30,6 @@ while searchedOut[dstOut] is not None:
 path.reverse()
 for each in path:
     print(each+" ",end="")
+print("\n")
+os.system('pause')
 
