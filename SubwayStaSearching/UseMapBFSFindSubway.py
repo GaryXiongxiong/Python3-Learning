@@ -24,7 +24,7 @@ dst = input("请输入目的地：  ")
 searchedOut,dstOut = search(stationStringMap[start],stationStringMap[dst])
 print("-"*10+"路径如下"+"-"*10)
 path = [dstOut]
-while searchedOut[dstOut] is not None:
+while searchedOut[dstOut] is not None:#
     path.append(searchedOut[dstOut])
     dstOut = searchedOut[dstOut]
 path.reverse()
