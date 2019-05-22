@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\qq279\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.pythonPath": "C:\\Users\\qq279\\Anaconda3\\python.exe",
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -7,5 +7,5 @@
         "**/.factorypath": true
     },
     "python.linting.pylintEnabled": true,
-    "python.envFile": "${workspaceFolder}/.env
+    "python.envFile": "${workspaceFolder}/.env"
 }
